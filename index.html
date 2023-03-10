@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="element-container">
+                <div class="text">
+                    <div class="rock">ROCK</div>
+                    <div class="paper">PAPER</div>
+                    <div class="scissors">SCISSORS</div>
+                </div>
+                <div class="score">
+                    <div class="Nscore">
+                        <div class="score-text">
+                            <span>Computer</span>
+                            <span>Score</span>
+                        </div>
+                        <div>
+                            <span id="cscore">0</span>
+                        </div>
+                    </div>
+                    <div class="Nscore">
+                        <div class="score-text">
+                            <span>Your</span>
+                            <span>Score</span>
+                        </div>
+                        <div>
+                            <span id="mscore">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="upper">
+                <div class="blue outer-circle">
+                    <div class="first shape">
+                        <img src="./icons/fist.png" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="purple outer-circle">
+                    <div class="third shape">
+                        <img src="./icons/scissor.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="orange outer-circle">
+                <div class="purple second shape">
+                    <img src="./icons/hand.png" alt="" srcset="">
+                </div>
+            </div>
+            <div class="rules hidden" id="rule">
+                <div id="cross" class="shutdown">
+                    <img src="./icons/close.png" alt="X">
+                </div>
+                <li>H</li>
+                <li>H</li>
+                <li>H</li>
+                <li>H</li>
+            </div>
+            <div class="button">
+                <button id="btn">Rules</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
