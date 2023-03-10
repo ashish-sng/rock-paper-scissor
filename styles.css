@@ -82,7 +82,35 @@ body {
   font-weight: bold;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
- 
+
+.line1{
+  width:200px;
+  position: absolute;
+  top: 360px;
+  border-bottom: 10px solid rgb(81, 83, 83);
+  transform: rotate(0deg);
+  transform-origin: left;
+}
+.line2{
+    width:200px;
+    position: absolute;
+    top: 380px;
+    left:670px;
+    border-bottom: 10px solid rgb(81, 83, 83);
+    transform: rotate(-60deg);    
+    transform-origin: right;
+}
+
+.line3{
+  width:250px;
+  position: absolute;
+  top: 380px;
+  left: 660px;
+  border-bottom: 10px solid rgb(81, 83, 83);      
+  transform: rotate(56deg);
+  transform-origin: left;
+} 
+
 /* footer section */
 
 .footer{
@@ -99,6 +127,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1001;
 }
 
 .blue{
@@ -119,6 +148,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .upper{
@@ -150,6 +180,29 @@ body {
   left: 1200px;
   z-index: 2;
  }
+
+ ul{
+  list-style-type: square;
+}
+
+ul li::before{
+  content: "\2022";
+  color: yellow;
+  font-weight: bold;
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -1em;
+  list-style-position: inside;
+}
+
+.game-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
 
  .hidden{
   display: none;
