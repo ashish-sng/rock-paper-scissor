@@ -70,12 +70,23 @@ playbtn.addEventListener("click", function () {
   right.classList.add("hidden");
 
   userrock.classList.add("hidden");
+  userrock.classList.remove("rounded-gradient-borders");
+
   userpaper.classList.add("hidden");
+  userpaper.classList.remove("rounded-gradient-borders");
+
   userscissor.classList.add("hidden");
+  userscissor.classList.remove("rounded-gradient-borders");
 
   pcrock.classList.add("hidden");
+  pcrock.classList.remove("rounded-gradient-borders");
+
   pcpaper.classList.add("hidden");
+  pcpaper.classList.remove("rounded-gradient-borders");
+
   pcscissor.classList.add("hidden");
+  pcscissor.classList.remove("rounded-gradient-borders");
+
 });
 
 
@@ -119,11 +130,13 @@ rock.addEventListener("click", function () {
     tie();
   }else if(pc === "paper"){
     pcpaper.classList.remove("hidden");
+    pcpaper.classList.add("rounded-gradient-borders");
     lose();
     pcScore++;
     changePcScore(pcScore);
   }else{
     pcscissor.classList.remove("hidden");
+    userrock.classList.add("rounded-gradient-borders");
     win();
     userScore++;
     changeUserScore(userScore);
@@ -138,15 +151,17 @@ paper.addEventListener("click", function () {
     pcpaper.classList.remove("hidden");
     tie();
   }else if(pc === "scissor"){
-    lose();
     pcscissor.classList.remove("hidden");
+    pcscissor.classList.add("rounded-gradient-borders");
+    lose();
     pcScore++;
     changePcScore(pcScore);
   }else{
     win();
+    userpaper.classList.add("rounded-gradient-borders");
+    pcrock.classList.remove("hidden");
     userScore++;
     changeUserScore(userScore);
-    pcrock.classList.remove("hidden");
   }
 });
 
@@ -162,10 +177,12 @@ scissor.addEventListener("click", function () {
     pcScore++;
     changePcScore(pcScore);
     pcrock.classList.remove("hidden");
+    pcrock.classList.add("rounded-gradient-borders");
   }else{
     win();
     userScore++;
     changeUserScore(userScore);
     pcpaper.classList.remove("hidden");
+    userscissor.classList.add("rounded-gradient-borders");
   }
 });
